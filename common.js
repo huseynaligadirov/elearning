@@ -1,0 +1,1 @@
+export const startup_name = 'Learning'
