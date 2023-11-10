@@ -1,5 +1,6 @@
 import React from "react";
-
+import photo from '@/public/Course-Thumbnail.webp'
+import Image from "next/image";
 const MentorshipCons = () => {
   return (
     <div className="w-[70%] mx-auto grid grid-cols-1 gap-8 ">
@@ -24,19 +25,11 @@ const MentorshipCons = () => {
           </p>
         </div>
 
-        <img
-          className="h-[250px] rounded-3xl"
-          src="https://imgs.search.brave.com/JZmXMuOlzjV3B22-6ENGnwZrySX9bF2k_FG3E9tH1Sg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTM5/NDYwNTQyL3Bob3Rv/L3Nlbmlvci1idXNp/bmVzcy1tZW50b3Iu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PXlNNUFjMXZzRklF/bXpHbzFsckVoYXhs/cVluNEZ2WXhFdFla/NmtEaHRnekE9"
-          alt=""
-        />
+        <Image src={photo} alt="" height={250} />
       </div>
       {/*  */}
       <div className="flex items-center gap-8">
-        <img
-          className="h-[250px] rounded-3xl"
-          src="https://imgs.search.brave.com/JZmXMuOlzjV3B22-6ENGnwZrySX9bF2k_FG3E9tH1Sg/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTM5/NDYwNTQyL3Bob3Rv/L3Nlbmlvci1idXNp/bmVzcy1tZW50b3Iu/anBnP3M9NjEyeDYx/MiZ3PTAmaz0yMCZj/PXlNNUFjMXZzRklF/bXpHbzFsckVoYXhs/cVluNEZ2WXhFdFla/NmtEaHRnekE9"
-          alt=""
-        />
+      <Image src={photo} alt="" height={250} />
         <div>
           <h2 className="text-[#2e1792] text-[24px] font-medium mb-4">
             Mentorship

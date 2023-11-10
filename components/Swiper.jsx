@@ -2,7 +2,7 @@
 import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import THUMB from '@/public/Course-Thumbnail.webp'
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/free-mode';
@@ -12,6 +12,7 @@ import {AiFillEye, AiFillStar} from 'react-icons/ai'
 import {ImPriceTag} from 'react-icons/im'
 import {FaChalkboardTeacher} from 'react-icons/fa'
 import { FreeMode } from 'swiper/modules';
+import Image from 'next/image';
 
 const courses = [
     {
@@ -112,7 +113,7 @@ export default function App({name}) {
         className="mySwiper"
       >
         {
-            courses.map(course => <SwiperSlide>
+            courses.map((course, index) => <SwiperSlide key={index} >
                 <PerCourse data={course} />
             </SwiperSlide>)
         }
@@ -125,7 +126,7 @@ export default function App({name}) {
 
 const PerCourse = ({data}) => {
     return <div className='rounded-xl overflow-hidden bg-white' >
-        <img src="https://imgs.search.brave.com/-wQrFppxPba5BEEfgPmadebw3PfI2nFXpW1fcX84-CY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/bGluZHNheWRvZXNs/YW5ndWFnZXMuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDE2/LzAxL0NvdXJzZS1U/aHVtYm5haWwuanBn" alt="" />
+        <Image  src={THUMB} alt="" />
         <div className="texts px-2 pt-2 pb-4 flex flex-col gap-2 items-start ">
             <h2 className='text-[#2e1792] font-bold text-[16px] my-2' >{data.courseName.slice(0,24)}...</h2>
 
