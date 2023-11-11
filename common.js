@@ -1,1 +1,1 @@
-export const startup_name = 'Learning'
+export const startup_name = 'LearnEon'

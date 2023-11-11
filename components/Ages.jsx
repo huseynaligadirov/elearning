@@ -39,7 +39,7 @@ const Ages = () => {
   return (
     <div className="container-main">
         <div className="heading text-[32px] text-center font-bold mb-8 text-[#2e1792]">Age Categories</div>
-        <div className="grid grid-cols-3 gap-8 ">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 ">
             {
                 cats.map((cat, index) => <div key={index} className='flex flex-col items-center gap-4' >
                 <div> <Image src={cat.icon} alt='' width={70} height={70} /> </div>

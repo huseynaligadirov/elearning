@@ -14,6 +14,8 @@ import {FaChalkboardTeacher} from 'react-icons/fa'
 import { FreeMode } from 'swiper/modules';
 import Image from 'next/image';
 
+import crs from '@/public/course.png'
+
 const courses = [
     {
       "courseName": "Data Science Fundamentals",
@@ -103,7 +105,21 @@ export default function App({name}) {
     <>
       {
         name=='courses'?<Swiper
-        slidesPerView={5}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+
+          },
+          768: {
+            slidesPerView: 3,
+
+          },
+          1024: {
+            slidesPerView: 4,
+
+          },
+        }}
+
         spaceBetween={30}
         freeMode={true}
         pagination={{
@@ -126,7 +142,7 @@ export default function App({name}) {
 
 const PerCourse = ({data}) => {
     return <div className='rounded-xl overflow-hidden bg-white' >
-        <Image  src={THUMB} alt="" />
+        <div className='w-full h-[150px] flex items-center justify-center border-b-[1px]' ><Image className='w-[80px]'  src={crs} alt="" /></div>
         <div className="texts px-2 pt-2 pb-4 flex flex-col gap-2 items-start ">
             <h2 className='text-[#2e1792] font-bold text-[16px] my-2' >{data.courseName.slice(0,24)}...</h2>
 

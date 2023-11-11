@@ -5,3 +5,7 @@
 .container-main {
   @apply w-[90%] mx-auto
 }
+
+header {
+  background-attachment: fixed;
+}
