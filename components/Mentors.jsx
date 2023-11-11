@@ -28,7 +28,7 @@ const Mentors = () => {
             </div>
             <div className='flex flex-col items-center gap-2' >
                 <Image width={100} height={100} src={pl} className='rounded-full'/>
-                <h2 className='text-[16px] font-bold text-[#2e1792]' >Fiona O'Connor</h2>
+                <h2 className='text-[16px] font-bold text-[#2e1792]' >Fiona Connor</h2>
             </div>
         </div>
     </div>
