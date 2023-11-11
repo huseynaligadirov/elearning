@@ -14,7 +14,7 @@ const MentorshipCons = () => {
             Mentorship
           </h2>
           <p className="text-[14px] font-medium text-black">
-            Mentorship, an intricate symbiosis of wisdom and guidance,
+            {`Mentorship, an intricate symbiosis of wisdom and guidance,
             transcends conventional tutelage. It embodies a dynamic exchange
             wherein seasoned sagacity converges with nascent potential,
             fostering not just skill acquisition but profound personal
@@ -26,7 +26,7 @@ const MentorshipCons = () => {
             professional triumphs but a stalwart companion in the labyrinth of
             self-discovery. In this orchestration of mentorship, mastery begets
             legacy, weaving a tapestry where mentor and mentee coalesce in a
-            harmonious continuum of enlightenment.
+            harmonious continuum of enlightenment.`}
           </p>
         </div>
 
@@ -40,7 +40,7 @@ const MentorshipCons = () => {
             Career Consultancy
           </h2>
           <p className="text-[14px] font-medium text-black">
-            Career consultancy, a bespoke compass in the professional terrain,
+            {`Career consultancy, a bespoke compass in the professional terrain,
             transcends traditional vocational guidance. It entails a meticulous
             fusion of introspection and strategic foresight, aligning individual
             aspirations with market dynamics. Seasoned consultants decode the
@@ -52,7 +52,7 @@ const MentorshipCons = () => {
             ensuring clients navigate the flux of contemporary workplaces
             adeptly. The synergy between consultant and client becomes a
             collaborative odyssey, navigating not just employment landscapes but
-            sculpting a fulfilling professional narrative.
+            sculpting a fulfilling professional narrative.`}
           </p>
         </div>
       </div>
