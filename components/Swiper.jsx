@@ -16,7 +16,7 @@ import Image from 'next/image';
 
 import crs from '@/public/course.png'
 
-const courses = [
+export const courses = [
     {
       "courseName": "Data Science Fundamentals",
       "categoryName": "Data Science",
@@ -140,8 +140,8 @@ export default function App({name}) {
 }
 
 
-const PerCourse = ({data}) => {
-    return <div className='rounded-xl overflow-hidden bg-white' >
+export const PerCourse = ({data}) => {
+    return <div className='rounded-xl overflow-hidden bg-white border-[1px]' >
         <div className='w-full h-[150px] flex items-center justify-center border-b-[1px]' ><Image className='w-[80px]'  src={crs} alt="" /></div>
         <div className="texts px-2 pt-2 pb-4 flex flex-col gap-2 items-start ">
             <h2 className='text-[#2e1792] font-bold text-[16px] my-2' >{data.courseName.slice(0,24)}...</h2>
